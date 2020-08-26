@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Jong Sung Park</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo"><h1>J. S. Park</h1></div>
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li><a href="index.html">home</a></li>
+          <li><a href="research.html">research</a></li>
+          <li><a href="publications.html">publications</a></li>
+          <li class="current"><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="content">
+        <img src="images/js.jpg" width="600" height="600" alt="photo_profile" />
+        <h1>Contact</h1>
+        <p>My only and fastest way of contact is email.</p>
+        <p>Please contact through jp109@iu.edu or pjsjongsung@gmail.com</p>
+        <p>My reply will be super fast. Like faster than the flash.</p>
+      </div>
+    </div>
+    <footer>
+      <p><a href="index.html">home</a> | <a href="about.html">research</a> | <a href="publications.html">publications</a> | <a href="contact.html">contact</a></p>
+      <p>&copy;<a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+    
+    var d = new Date();
+    document.getElementById('year').innerHTML = d.getFullYear();
+  </script>
+</body>
+</html>

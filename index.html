@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Jong Sung Park</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo"><h1>J. S. Park</h1></div>
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current"><a href="index.html">home</a></li>
+          <li><a href="research.html">research</a></li>
+          <li><a href="publications.html">publications</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h3>Contact list</h3>
+          <li>email : pjsjongsung@gmail.com</li>
+          <li>email2 : jp109@iu.edu</li>
+        </div>
+        <div class="sidebar">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="https://grg.sice.indiana.edu/">GRG lab</a></li>
+            <li><a href="https://dipy.org/">DIPY</a></li>
+            <li><a href="https://fury.gl/latest/index.html">FURY</a></li>
+            <li><a href="https://twitter.com/get_user_data">My Twitter account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <img src="images/js.jpg" width="600" height="600" alt="photo_profile" />
+        <h1>Welcome to Jong Sung Park's homepage</h1>
+        <p>Hi. My name is Jong Sung Park. I'm currently in the Master's program in Computer Science at Indiana University, Bloomington.</p>
+        <p>My primary research areas are machine learning and deep learning im medical imaging. The main focus of my current research is multi-modal skull stripping and general segmentation of organs from medical images using deep learning.</p>
+        <p>I got my Bachelors degree in Life Science at Sogang University.</p>
+        <p>I'm currently studying under Professor Eleftherios Garyfallidis at IU. </p>
+        <h2>Things I love</h2>
+        <p>This is the list of the things I appreciate having in my life</p>
+        <ul>
+          <li>My lovely wife <a href="https://joy-neuro.github.io">Youngheun Jo</a>, a fantastic researcher</li>
+          <li>My parents who are great doctors</li>
+          <li>My sister <a href="https://scholar.google.com/citations?user=q-xo7fIAAAAJ&hl=en">Scarlet Park</a>, who is also a outstanding researcher</li>
+          <li>My cat <a href="images/hoochu.jpg">Hoochu</a>, who can't even catch a fly</li>
+          <li>My friends(Yes I mean you)</li>
+          <li>My pc and switch that provides me with a virtual world of hope and love</li>
+          <li>My board games all covered in dust due to the pandemic</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p><a href="index.html">home</a> | <a href="about.html">research</a> | <a href="publications.html">publications</a> | <a href="contact.html">contact</a></p>
+      <p>&copy;<a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+    
+    var d = new Date();
+    document.getElementById('year').innerHTML = d.getFullYear();
+  </script>
+</body>
+</html>
