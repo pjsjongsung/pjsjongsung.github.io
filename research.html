@@ -1,87 +1,20 @@
-<!DOCTYPE HTML>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Jong Sung Park</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research by Jong Sung Park in brain extraction, medical image synthesis, segmentation, registration, and anomaly detection.">
+  <meta name="theme-color" content="#102b3f"><title>Research | Jong Sung Park</title><link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <div id="main">
-    <header>
-      <div id="logo"><h1>J. S. Park</h1></div>
-      <nav>
-        <ul class="lavaLampWithImage" id="lava_menu">
-          <li><a href="index.html">home</a></li>
-          <li class="current"><a href="research.html">research</a></li>
-          <li><a href="publications.html">publications</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="site_content">
-      <div id="content">
-        <h1>Research</h1>
-        <p>My research is focused on machine learning and deep learning segmentation methods on medical images</p>
-        <h2>Skull stripping</h2>
-        <p>Brain extraction is the very first step of any brain imaging pipeline</p>
-        <p>Recently highly generalizable methods have been developed but there is room for more improvement.</p>
-        <p>While several algorithms have provided fast and accurate results for several modalities,</p>
-        <p>recent advancements in Deep Learning has shown improvement in speed, accuracy and generalizability.</p>
-        <p>Supervised Deep learning approaches can be used to provide a highly accurate method, while unsupervised methods can provide a more general segmentation.</p>
-        <p>The main focus points of related research include generalizability, speed, efficiency and accuracy</p>
-        <li><img src="images/ss1.png" width="666" height="300" alt="ss_one" /></li>
-        <li><img src="images/ss2.PNG" width="717" height="600" alt="ss_two" /></li>
-        <h2>Neuroimage segmentation</h2>
-        <p>There are various tasks of segmentation in nueroimaging, depending on what the region of interest is.</p>
-        <p>Some are separable by intensity, while some are very structure or relative location dependent.</p>
-        <p>There are various tasks of segmentation in neuroimaging, depending on what the region of interest is.</p>
-        <p>Multiple modalities, species and regions create different needs, hence different models and algorithms per task</p>
-        <li><img src="images/seg1.png" width="300" height="300" alt="seg_one" /></li>
-        <li><img src="images/seg2.png" width="300" height="300" alt="seg_two" /></li>
-        <h2>Synthetic training</h2>
-        <p>Due to the nature of medical imaging, there is a limit to supervised training possible</p>
-        <p>Thus, deep learning models learning crucial anatomical information from limited examples</p>
-        <p>Simulating anatomical structures to create synthetic images have been recently proposed as an alternative.</p>
-        <p>As a way of populating a small or non-existent dataset, it has proven to increase generalizability drastically, with even higher accuracy in some cases</p>
-        <li><img src="images/synth1.png" width="900" height="900" alt="synth_one" /></li>
-        <h2>Collaborations</h2>
-        <p>I'm currently looking for any type of collaborations. Anyone interested in preprocessing of brain(healthy or non healthy) or any type of neural medical images/data from any species, please feel free to contact me.</p>
-      </div>
-    </div>
-    <footer>
-      <p><a href="index.html">home</a> | <a href="research.html">research</a> | <a href="publications.html">publications</a> | <a href="contact.html">contact</a></p>
-      <p>&copy;<a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
-    </footer>
-  </div>
-  <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
-  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#images').kwicks({
-        max : 600,
-        spacing : 2
-      });
-    });
-  </script>
-  <script type="text/javascript">
-    $(function() {
-      $("#lava_menu").lavaLamp({
-        fx: "backout",
-        speed: 700
-      });
-    });
-  </script>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="Jong Sung Park, home"><span class="brand-mark" aria-hidden="true">JP</span><span>Jong Sung Park</span></a><nav aria-label="Primary navigation"><a href="index.html">About</a><a href="research.html" aria-current="page">Research</a><a href="publications.html">Publications</a><a href="contact.html">Contact</a></nav></header>
+  <main id="main-content">
+    <header class="page-intro shell"><p class="eyebrow">Research</p><h1>Learning anatomy without losing sight of variation.</h1><p class="lede">I develop machine-learning methods for medical images with an emphasis on generalization, data efficiency, anatomical fidelity, and reproducibility.</p></header>
+    <section class="research-feature shell"><div class="feature-copy"><p class="eyebrow">01 · Brain extraction</p><h2>Reliable preprocessing across modalities</h2><p>Brain extraction is a foundational step in neuroimaging. My work investigates supervised and synthetic-data approaches that remain accurate across imaging modalities, acquisition conditions, species, and anatomy.</p><ul class="tag-list" aria-label="Brain extraction themes"><li>Skull stripping</li><li>Multi-modal MRI</li><li>Synthetic training</li><li>Generalization</li></ul></div><img src="images/ss1.webp" width="424" height="191" loading="lazy" alt="Brain extraction examples showing source images, predictions, and reference masks"></section>
+    <section class="research-feature shell reverse"><div class="feature-copy"><p class="eyebrow">02 · Segmentation &amp; anomaly detection</p><h2>Structure-aware analysis</h2><p>I study segmentation and registration methods that use shape, location, and tissue context—not intensity alone. Applications include neuroimaging and retinal OCT analysis for detecting glaucomatous defects.</p><ul class="tag-list" aria-label="Analysis themes"><li>Registration</li><li>OCT</li><li>Deep CRFs</li><li>3D structure</li></ul></div><img src="images/seg1.webp" width="752" height="900" loading="lazy" alt="Medical image segmentation visualization with anatomical regions highlighted"></section>
+    <section class="research-feature shell"><div class="feature-copy"><p class="eyebrow">03 · Synthesis &amp; inpainting</p><h2>Training data built around anatomy</h2><p>When curated medical data are scarce, synthesis can provide controlled training examples. My research spans fully synthetic skull-stripping data, cross-modality translation, self-supervised denoising, and anatomy-preserving brain inpainting.</p><ul class="tag-list" aria-label="Synthesis themes"><li>Simulation</li><li>GANs</li><li>Inpainting</li><li>Self-supervision</li></ul></div><img src="images/synth1.webp" width="1100" height="778" loading="lazy" alt="Synthetic medical image generation workflow and example volumes"></section>
+    <section class="section section-tint"><div class="shell callout"><div><p class="eyebrow">Collaborate</p><h2>Interested in robust medical image analysis?</h2><p>I welcome conversations around neuroimaging, segmentation, synthetic data, retinal imaging, and open-source scientific software.</p></div><a class="button primary" href="contact.html">Get in touch</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>Jong Sung Park</strong><span>Medical imaging researcher</span></div><div class="footer-links"><a href="mailto:pjsjongsung@gmail.com">Email</a><a href="https://github.com/pjsjongsung">GitHub</a><a href="pdfs/JS_PARK_CV.pdf">CV</a></div></div></footer>
 </body>
 </html>
-
-
-

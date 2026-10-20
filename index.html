@@ -1,96 +1,50 @@
-<!DOCTYPE HTML>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Jong Sung Park</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jong Sung Park is a postdoctoral research fellow at the University of Michigan developing generalizable machine-learning methods for medical imaging.">
+  <meta name="theme-color" content="#102b3f"><title>Jong Sung Park | Medical Imaging Researcher</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <div id="main">
-    <header>
-      <div id="logo"><h1>J. S. Park</h1></div>
-      <nav>
-        <ul class="lavaLampWithImage" id="lava_menu">
-          <li class="current"><a href="index.html">home</a></li>
-          <li><a href="research.html">research</a></li>
-          <li><a href="publications.html">publications</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="site_content">
-      <div id="sidebar_container">
-        <div class="sidebar">
-          <h3>Contact list</h3>
-          <li>email : pjsjongsung@gmail.com</li>
-          <li>email2 : jp109@iu.edu</li>
-        </div>
-        <div class="sidebar">
-          <h3>Useful Links</h3>
-          <ul>
-            <li><a href="https://grg.sice.indiana.edu/">GRG lab</a></li>
-            <li><a href="https://dipy.org/">DIPY</a></li>
-            <li><a href="https://fury.gl/latest/index.html">FURY</a></li>
-            <li><a href="https://twitter.com/get_user_data">My Twitter account</a></li>
-          </ul>
-        </div>
-      </div>
-      <div id="content">
-        <img src="images/js_profile.jpg" width="251" height="251" alt="photo_profile" />
-        <h1>Welcome to Jong Sung Park's homepage</h1>
-        <p>Hi. My name is Jong Sung Park. I'm a Ph.D. candidate in Intelligent Systems Engineering and Neuroscience at Indiana University, Bloomington. (BTW here is my <a href="pdfs/JS_PARK_CV.pdf" target="_blank">CV</a>)</p>
-        <p>My primary research areas are machine learning and deep learning in neuro/medical imaging preprocessing. The main focus of my current research is multi-modal skull stripping and general segmentation of organs from medical images using deep learning.</p>
-        <p>I got my Bachelors degree in Life Science at Sogang University and my Masters in Computer Science at Indiana University.</p>
-        <p>I'm currently studying under Professor Eleftherios Garyfallidis at IU. </p>
-        <h2>Things I love</h2>
-        <p>This is the list of the things I appreciate having in my life</p>
-        <ul>
-          <li>My lovely wife <a href="https://joy-neuro.github.io">Youngheun Jo</a>, a fantastic researcher</li>
-          <li>My son who is super cute but cannot show you guys until he understands portrait rights</li>
-          <li>My parents who are great doctors</li>
-          <li>My sister <a href="https://scholar.google.com/citations?user=q-xo7fIAAAAJ&hl=en">Scarlet Park</a>, who is also a outstanding researcher</li>
-          <li>My cat <a href="images/hoochu.jpg">Hoochu</a>, who couldn't even catch a fly</li>
-          <li>My friends(Yes I mean you)</li>
-          <li>My pc and switch that provides me with a virtual world of hope and love</li>
-          <li>My board games all covered in dust due to the pandemic (Still under dust)</li>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Jong Sung Park, home"><span class="brand-mark" aria-hidden="true">JP</span><span>Jong Sung Park</span></a>
+    <nav aria-label="Primary navigation"><a href="index.html" aria-current="page">About</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <main id="main-content">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Medical imaging · machine learning · open science</p>
+        <h1>Building robust imaging methods that work beyond a single dataset.</h1>
+        <p class="lede">I am a Postdoctoral Research Fellow in the Department of Radiology at the University of Michigan. My work develops generalizable deep-learning methods for medical image segmentation, synthesis, and analysis.</p>
+        <div class="actions"><a class="button primary" href="research.html">Explore my research</a><a class="button secondary" href="pdfs/JS_PARK_CV.pdf">Download CV</a></div>
+        <ul class="hero-meta" aria-label="Current role and expertise">
+          <li><strong>Current</strong><span>University of Michigan Radiology</span></li>
+          <li><strong>Ph.D.</strong><span>Intelligent Systems Engineering &amp; Neuroscience</span></li>
+          <li><strong>Focus</strong><span>Generalizable medical image analysis</span></li>
         </ul>
       </div>
-    </div>
-    <footer>
-      <p><a href="index.html">home</a> | <a href="research.html">research</a> | <a href="publications.html">publications</a> | <a href="contact.html">contact</a></p>
-      <p>&copy;<a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
-    </footer>
-  </div>
-  <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
-  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#images').kwicks({
-        max : 600,
-        spacing : 2
-      });
-    });
-  </script>
-  <script type="text/javascript">
-    $(function() {
-      $("#lava_menu").lavaLamp({
-        fx: "backout",
-        speed: 700
-      });
-    });
-    
-    var d = new Date();
-    document.getElementById('year').innerHTML = d.getFullYear();
-  </script>
+      <figure class="portrait-wrap"><img class="portrait" src="images/js_profile.webp" width="360" height="360" alt="Portrait of Jong Sung Park"><figcaption>Research at the intersection of computation, anatomy, and clinical imaging.</figcaption></figure>
+    </section>
+    <section class="section shell" aria-labelledby="work-heading">
+      <div class="section-heading"><p class="eyebrow">Research agenda</p><h2 id="work-heading">Methods designed for real-world variation</h2><p>My research centers on models that learn useful anatomy while remaining resilient across scanners, modalities, species, and patient populations.</p></div>
+      <div class="card-grid three">
+        <article class="card"><span class="card-number">01</span><h3>Brain extraction</h3><p>Supervised, unsupervised, and synthetic-data approaches for accurate, efficient skull stripping.</p></article>
+        <article class="card"><span class="card-number">02</span><h3>Image synthesis</h3><p>Simulation, translation, and inpainting methods that preserve clinically meaningful anatomical detail.</p></article>
+        <article class="card"><span class="card-number">03</span><h3>Image analysis</h3><p>Registration and anomaly detection for neuroimaging, retinal imaging, and cross-modality research.</p></article>
+      </div>
+    </section>
+    <section class="section section-tint"><div class="shell split">
+      <div><p class="eyebrow">Selected work</p><h2>From synthetic training to clinical structure analysis</h2></div>
+      <div class="selected-list">
+        <a href="https://arxiv.org/abs/2505.07159"><span>2025 · First author</span><strong>Skull stripping with purely synthetic data</strong></a>
+        <a href="https://www.nature.com/articles/s43856-024-00452-8"><span>2024 · Communications Medicine</span><strong>Multi-scale V-net with deep feature CRF layers</strong></a>
+        <a href="publications.html"><span>Complete record</span><strong>View publications and presentations</strong></a>
+      </div>
+    </div></section>
+    <section class="section shell compact"><p class="eyebrow">Community</p><h2>Open-source contributor, mentor, and educator</h2><p class="wide-copy">I have mentored Google Summer of Code projects, led brain-segmentation tutorials for the DIPY Workshop, taught deep learning for medical imaging, and reviewed for ICLR, ICML, and neuroimaging journals.</p></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>Jong Sung Park</strong><span>Medical imaging researcher</span></div><div class="footer-links"><a href="mailto:pjsjongsung@gmail.com">Email</a><a href="https://github.com/pjsjongsung">GitHub</a><a href="pdfs/JS_PARK_CV.pdf">CV</a></div></div></footer>
 </body>
 </html>
-
